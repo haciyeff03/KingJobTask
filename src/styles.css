@@ -1,0 +1,39 @@
+.App {
+  display: flex;
+  margin-top: 130px;
+  justify-content: center;
+}
+.click_div {
+  background-color: blue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  @media (max-width: 768px) {
+    transition: none;
+  }
+}
+.click_div:hover {
+  animation: spin 0.4s linear infinite;
+  @media (max-width: 768px) {
+    animation: none;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(-6deg);
+  }
+  100% {
+    transform: rotate(6deg);
+  }
+}
+
+span {
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 600;
+}
